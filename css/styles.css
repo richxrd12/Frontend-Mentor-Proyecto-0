@@ -1,0 +1,90 @@
+:root{
+    --darkblue: hsl(212, 21%, 14%);
+    --grayishblue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --crema: hsl(30, 38%, 92%);
+    --darkcyan: hsl(158, 36%, 37%);
+
+}
+
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+html{
+    background-color: var(--crema);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem 2rem 2rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.photo{
+    background-image: url(../images/image-product-mobile.jpg);
+    padding: 5rem 10rem 5rem 10rem;
+    height: 5rem;
+    margin: 0%;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grayishblue);
+    margin: 0%;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.perfumename{
+    font-family: 'Fraunces', serif;
+    margin: 0%;
+    font-size: 23px;
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grayishblue);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.prices{
+    display: grid;
+    grid-template-areas: 
+    'leftside middle rightside';
+}
+
+.discountedprice{
+    grid-area: leftside;
+    font-family: 'Fraunces', serif;
+    color: var(--darkcyan);
+    font-size: 2rem;
+}
+
+.totalprice{
+    font-family: 'Montserrat', sans-serif;
+    grid-area: middle;
+    text-decoration: line-through;
+    display: left;
+    margin-top: 1.5rem;
+    color: var(--grayishblue);
+}
+
+.botondecompra{
+    display: flex;
+    justify-content: center;
+    background-color: var(--darkcyan);
+    padding: 1rem 0rem 1rem 0rem;
+    border-radius: 0.5rem;
+}
+
+.button{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: var(--darkcyan);
+    color: var(--white);
+    margin-left: 0.5rem;
+}
