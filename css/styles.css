@@ -24,7 +24,6 @@ body{
     flex-direction: column;
     padding: 2rem;
 }
-
 .photo{
     background-image: url(../images/image-product-mobile.jpg);
     background-size: cover;
@@ -53,7 +52,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: var(--grayishblue);
     font-size: 14px;
-    display: flex;
     align-items: center;
     line-height: 1.5rem;
 }
@@ -69,6 +67,7 @@ body{
     font-family: 'Fraunces', serif;
     color: var(--darkcyan);
     font-size: 2rem;
+    width: 6rem;
 }
 
 .totalprice{
@@ -86,6 +85,9 @@ body{
     background-color: var(--darkcyan);
     padding: 1rem 0rem 1rem 0rem;
     border-radius: 0.5rem;
+    color: var(--white);
+    gap: 1rem;
+    border-style: none;
 }
 
 .button{
@@ -94,4 +96,21 @@ body{
     background-color: var(--darkcyan);
     color: var(--white);
     margin-left: 0.5rem;
+}
+
+@media(min-width: 1440px){
+    body{
+        width: 40rem;
+        height: 35rem;
+        margin-left: 35rem;
+        display: flex;
+    }
+    .photo{
+        background-image: url(../images/image-product-desktop.jpg);
+        border-bottom-left-radius: 0.5rem;
+        display: left;
+        width: 60rem;
+        height: 100%;
+        background-size: cover;
+    }
 }
