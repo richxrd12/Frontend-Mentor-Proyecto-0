@@ -14,19 +14,25 @@ html{
 }
 
 body{
+    margin: 2rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    width: 90%;
+}
+.content{
     display: flex;
     flex-direction: column;
-    margin: 2rem 2rem 2rem 2rem;
-    background-color: var(--white);
     padding: 2rem;
-    border-radius: 0.5rem;
 }
 
 .photo{
     background-image: url(../images/image-product-mobile.jpg);
-    padding: 5rem 10rem 5rem 10rem;
-    height: 5rem;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
     margin: 0%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
 }
 
 .title{
@@ -49,6 +55,7 @@ body{
     font-size: 14px;
     display: flex;
     align-items: center;
+    line-height: 1.5rem;
 }
 
 .prices{
