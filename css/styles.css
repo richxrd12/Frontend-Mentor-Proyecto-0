@@ -90,7 +90,7 @@ body{
     border-style: none;
 }
 
-.button{
+button{
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     background-color: var(--darkcyan);
